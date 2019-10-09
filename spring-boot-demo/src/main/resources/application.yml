@@ -1,0 +1,28 @@
+server:
+  servlet:
+    context-path: /demo
+  port: 8000
+spring:
+  application:
+    name: spring-boot-demo
+#  profiles:
+#    active: dev
+
+demo:
+  springboot:
+    version: 2.1,2.1.8
+    name: test
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+#        include: ["mappings", "env"]
+        include: "*"
+info:
+  app:
+    name: spring-boot-demo
+    version: 0.0.1
